@@ -1,0 +1,136 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html>
+
+<head>
+<script type="text/javascript">
+all_images = new Array (
+"sadkim.jpg",
+"kim.jpg",
+"kimsmall.jpg");
+var ImgNum = 0;
+var ImgLength = all_images.length - 1;
+var delay = 2500;
+var lock = false;
+var run;
+
+function chgImg(direction) {
+ if (document.images) {
+  ImgNum = ImgNum + direction;
+  if (ImgNum > ImgLength) { ImgNum = 0; }
+  if (ImgNum < 0) { ImgNum = ImgLength; }
+  document.slide_show.src = all_images[ImgNum];
+ }
+}
+
+function auto() {
+ if (lock == true) {
+  lock = false;
+  window.clearInterval(run);
+ }
+ else if (lock == false) {
+  lock = true;
+  run = setInterval("chgImg(1)", delay);
+ }
+}
+</script>
+<title>лаба1-2 | mylaba_supramajestic.ru</title>
+ <meta charset = "utf8" name="description" content="первая лаба itex">
+ <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+  .multi2{
+  front-size: 2em;
+  }
+  H2{
+  font-size: 120%;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    color: #333366; 
+  }
+  input:invalid {
+    background: #fdd;
+   }
+   input:valid {
+    background: #dfd; 
+   }
+  </style>
+</head>
+<body background ="ornaments_texture1133.jpg">
+<form style="color:red">
+
+<blockquote><b><h1>Я пихаю сюда всякие штуки чтобы показать, что я разобрался в HTML, конкретно эта надпись содержит красивые отступы со всех сторон</h1></b></blockquote>
+<hr>
+<header><h1>Лаба 1 и 2</h1></header>
+<dd><b>E=<i>mc<sup>2</sup></i></b>, где <b>Е</b> - енергия обьекта, <b>m</b> - его масса, <b>c</b> - скорость света в вакууме, равная 299 792458 <i> м/c</i>.</dt>
+<dd><select>
+  <option>Сафронов</option>
+  <option>Федотов</option>
+  <option>Разинькова</option>
+  <option>Пономаренко</option>
+</select>
+<p><input type="text" name="q" placeholder="ввод информации о студенте">
+<input type="submit" value="записать" >
+<input type="reset" value="стереть"></p>
+</dt>
+<table align="center"bordercolor="green" background="1_aS4OmJPwDkjb2HTZLZZ8pw.jpeg" border=1 rules ="groups">
+<tr>
+<th align="center"><td>1</td> </th>
+<th align="center"><td>Студенты                                                                              </td> </th>
+</tr>
+<colgroup>
+<tr>
+<th align="center"><td>2</td> </th>
+<th align="center" colour = "grey"><td>Илья дурачек</td>                                                                                </td> </th>
+</tr>
+<colgroup>
+<tr>
+<th align="center"><td>3</td> </th>
+<th align="center"><td><p style="font-size: 200%; font-family: monospace; color:black">Права женщин                                                                          </p></td> </th>
+</tr>
+<colgroup>
+<tr>
+<th align="center"><td>4</td> </th>
+<th align="center"><td><h2>Если смотреть фильмы с неграми наоборот то начало будет грустным зато финал счастливым</h2></td> </th>
+</tr>
+</table>
+<dd>ОЧЕНЬ ВАЖНО!КТО ТАКИЕ ПЕНДОСЫ?
+<a href="https://russian7.ru/post/pendosy-pochemu-russkie-tak-nazyvayu-am/">ответ тут</a></dd>
+<a1><a href="new1.html#place"><img src="inx960x640.jpg"  alt="lorem"></a></a1>
+<img src="kim.jpg">
+<div>
+Ким показывает нам пример работы "float"
+<p>Адрес сайта</p>
+   <p><input type="url" required></p>
+   <p>Адрес электронной почты</p>
+   <p><input type="email" required></p>
+   <p><input type="submit" value="Отправить" /></p> 
+</div>
+<table align="left | center | right"  id = "help">
+<tr>
+<tr><th align="center">Заголовок1</th></tr>
+<tr>
+<th align="center">
+   пример использования идентификаторов.Этот элемент помогает в случае, когда вы находитесь в осознании того
+   факта, что совершенно не понимаете, кто и как вам может помочь. Именно
+   в этот момент мы и подсказываем, что помочь вам никто не сможет.
+ </th>
+</tr>
+</tr>
+<script type="text/javascript">
+ auto();
+</script>
+</table>
+<table style="margin: 0 auto;">
+ <tr style="text-align: center;">
+  <td colspan="3"><img src="image/img_1.png" name="slide_show"></td>
+ </tr>
+ <tr>
+  <td style="text-align: right;"><a href="javascript:chgImg(-1)">Предыдущая</a></td>
+  <td style="text-align: center;"><a href="javascript:auto()">Старт/Стоп</a></td>
+  <td style="text-align: left;"><a href="javascript:chgImg(1)">Следующая</a></td>
+ </tr>
+</table>
+
+<form>
+</body>
+
+</html>

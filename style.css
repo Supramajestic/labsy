@@ -1,0 +1,27 @@
+H1 {
+  color: #000080;
+  font-size: 200%;
+  font-family: Arial, Verdana, sans-serif;
+  text-align: center;
+}
+A1{
+	float:left;
+    position:relative;
+	top: 0px;
+	left:0px;
+    max-width: 100%;
+	height: auto;
+}
+P {
+  padding-left: 20px;
+}
+A2{
+    width: 100%;
+	height: auto;
+}
+ #help {
+    position: absolute; /* Абсолютное позиционирование */
+    left: 20px; /* Положение элемента от левого края */
+    top: 650px; /* Положение от верхнего края */
+    width: 225px; /* Ширина блока */
+    padding: 5px; /* Поля вокруг текста */
